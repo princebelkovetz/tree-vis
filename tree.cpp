@@ -28,6 +28,11 @@ std::pair <Node*, Node*> split(Node* cur, int key){
     }
 }
 
+Tree::~Tree()
+{
+    delete root;
+}
+
 void recalcWidth(Node* cur){
     if (cur == nullptr) return;
     recalcWidth(cur->leftSon);

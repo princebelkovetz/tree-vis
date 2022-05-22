@@ -10,6 +10,7 @@ class Vertex: public QGraphicsItem
 public:
     Vertex();
     Vertex(int _x, int _y, int _lenX, int _lenY, int _id);
+    ~Vertex();
 
 protected:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr) override;

@@ -11,3 +11,11 @@ Node::Node(int _key)
     p = rand();
     key = _key;
 }
+
+Node::~Node()
+{
+    if (rightSon != nullptr)
+        delete rightSon;
+    if (leftSon != nullptr)
+        delete leftSon;
+}

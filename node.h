@@ -11,6 +11,7 @@ public:
     Node* leftSon, * rightSon;
     int key, p;
     int w, wLeft, wRight;
+    ~Node();
 };
 
 #endif // NODE_H

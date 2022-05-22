@@ -14,6 +14,11 @@ Vertex::Vertex(int _x, int _y, int _lenX, int _lenY, int _id): QGraphicsItem()
     id = _id;
 }
 
+Vertex::~Vertex()
+{
+
+}
+
 void Vertex::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     QPen pen = QPen();

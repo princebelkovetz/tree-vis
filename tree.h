@@ -10,6 +10,7 @@ public:
     Tree();
     void add(int x);
     void recalc();
+    ~Tree();
 };
 
 #endif // TREE_H
